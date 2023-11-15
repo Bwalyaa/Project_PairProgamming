@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 h3 {
@@ -285,3 +286,4 @@ header {
     display: inline-block;
     animation: heartbeat 1s infinite;
 }
+
