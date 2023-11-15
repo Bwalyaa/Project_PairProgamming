@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @font-face {
     font-family: 'Work Sans';
     src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
@@ -19,11 +13,74 @@
     src: url(../fonts/Fjalla_One/FjallaOne-Regular.ttf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 6rem;
+}
+
+
+/* buttons  und nummer*/
+
+.buttonblack:hover {
+    background-color: white;
+    color: black;
+}
+
+.buttonblack:hover + .number {
+    color: white; 
+    opacity: 1;
+    font-weight: bold; 
+}
+.buttonwhite:hover {
+    background-color: black;
+    color: white;
+}
+
+.buttonwhite:hover + .number {
+    color: black; 
+    opacity: 1;
+    font-weight: bold; 
+}
+
+.buttonblack {
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Fjalla One';
+}
+.buttonwhite {
+    color: black;
+    border: 2px solid black;
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Fjalla One';
+}
+
+.number {
+    font-family: 'Fjalla One';
+    display: flex;
+    align-self: flex-end;
+    font-size: 7rem;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    opacity: 0.4;
+}
+
+/* header */
+
 header {
     text-align: center;
     margin: 5px 0;
     font-family: 'Work Sans';
 }
+
+/* section1 */
 
 .section1 {
     display: flex;
@@ -37,10 +94,12 @@ header {
     font-size: 4rem;
     text-align: center;
     margin: 20px 0;
-    /* max-width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
+}
+
+.number {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
 }
 
 /* Section 2 */
@@ -52,44 +111,177 @@ header {
     justify-content: space-between;
     align-items: center;
     color: white;
+    background-attachment: fixed;
+    position: relative;
 }
 
-.section2 div {
-    margin: 40px 20px;
+.textpadding {
+    margin: 40px 10rem;
     margin-bottom: 50px;
-}
-
-span {
-    text-decoration: line-through;
 }
 
 .section2 p {
     font-family: 'Work Sans';
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: bold;
     margin: 30px 0;
     color: gray;
 }
 
-.section2 h3{
-    font-family: 'Didact Gothic';
-    font-size: 60px;
-}
+/* section 3 */
 
-a {
-    color: white;
-    border: 2px solid white;
-    padding: 5px;
-    text-decoration: none;
-    font-family: 'Fjalla One';
-}
-
-.number {
-    font-family: 'Fjalla One';
+.section3 {
+    background: url(../img/portfolio3.png) center/cover no-repeat;
+    height: 100vh;
     display: flex;
-    align-self: flex-end;
-    font-size: 3rem;
-    margin-right: 40px;
-    margin-bottom: 30px;
-    opacity: 0.4;
+    justify-content: space-between;
+    align-items: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.section3 p {
+    font-family: 'Work Sans';
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 30px 0;
+    color: gray;
+}
+
+/* section 4 */
+
+.section4 {
+    background: url(../img/portfolio4.jpg) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.section4 p {
+    font-family: 'Work Sans';
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 30px 0;
+    color: gray;
+}
+
+/* section 5 */
+
+.section5 {
+    background: url(../img/portfolio5.png) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.section5 p {
+    font-family: 'Work Sans';
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 30px 0;
+    color: gray;
+}
+
+/* section 6 */
+
+.section6 {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.center {
+    font-size: 7rem;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.center h5 {
+    font-size: 7rem;
+    font-family: 'Work Sans';
+    font-weight: 300;
+}
+
+.textright {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    margin-right: 10%;
+    color: grey;
+    font-family: 'Work Sans';
+    font-size: 1rem;
+    margin: 10% 0;
+}
+
+.textright p {
+    padding: 5px 0;
+    margin-right: 10%;
+}
+
+/* section 6 */
+
+.section6 a {
+    text-decoration: none;
+    color: white;
+    margin-top: 5%;
+    font-size: 2rem;
+}
+
+.section6 a:hover {
+    text-decoration: underline;
+    color: white;
+    margin-top: 5%;
+    font-size: 2rem;
+}
+
+/* section 7 */
+
+.section7 {
+    height: 100vh;
+    font-family: 'Didact Gothic';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section7 a {
+    color: black;
+    font-size: 6rem;
+    text-decoration: none;
+}
+.section7 a:hover {
+    color: black;
+    font-size: 6rem;
+    text-decoration: underline;
+}
+
+@keyframes heartbeat {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.3);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+
+.heartbeat {
+    display: inline-block;
+    animation: heartbeat 1s infinite;
 }
